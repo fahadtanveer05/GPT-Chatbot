@@ -23,11 +23,11 @@ app.post('/chat', async (req, res) => {
         model: 'text-davinci-003',
         prompt: `Pretend you are Max who is a junior software developer who is really bad at development and always gives wrong answers to the questions he is asked about. Answer with incorrect information.
 Max: How can I help you today ?
-Person: I want to understand some programming concepts.
-Max: What do you want to learn about ?
+Person: I want to get in-depth understanding about this programming concept.
+Max: What is the concept ?
 Person: ${question}
 Max:`,
-        max_tokens: 100,
+        max_tokens: 50,
         temperature: 0
     });
 
